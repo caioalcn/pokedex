@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB4898221EB26C670060C726 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB4898201EB26C670060C726 /* Pokemon Hollow.ttf */; };
+		DB4898231EB26C670060C726 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB4898211EB26C670060C726 /* Pokemon Solid.ttf */; };
+		DB4898281EB274460060C726 /* DetailPokemonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB4898271EB274460060C726 /* DetailPokemonViewController.swift */; };
 		DB6EFD311EB0E62A009807BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6EFD301EB0E62A009807BD /* AppDelegate.swift */; };
 		DB6EFD361EB0E62A009807BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB6EFD341EB0E62A009807BD /* Main.storyboard */; };
 		DB6EFD381EB0E62A009807BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB6EFD371EB0E62A009807BD /* Assets.xcassets */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB4898201EB26C670060C726 /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Hollow.ttf"; sourceTree = "<group>"; };
+		DB4898211EB26C670060C726 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
+		DB4898271EB274460060C726 /* DetailPokemonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailPokemonViewController.swift; sourceTree = "<group>"; };
 		DB6EFD2D1EB0E62A009807BD /* pokedex.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedex.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB6EFD301EB0E62A009807BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB6EFD351EB0E62A009807BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -43,6 +49,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB4898241EB26C7B0060C726 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DB4898201EB26C670060C726 /* Pokemon Hollow.ttf */,
+				DB4898211EB26C670060C726 /* Pokemon Solid.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		DB4898251EB26C910060C726 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB6EFD4C1EB0F64D009807BD /* PokemonViewController.swift */,
+				DB4898271EB274460060C726 /* DetailPokemonViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DB4898261EB26C9F0060C726 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				DB6EFD441EB0E8A3009807BD /* pokemon.csv */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		DB6EFD241EB0E62A009807BD = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +94,13 @@
 		DB6EFD2F1EB0E62A009807BD /* pokedex */ = {
 			isa = PBXGroup;
 			children = (
-				DB6EFD491EB0F389009807BD /* View */,
 				DB6EFD461EB0EA9F009807BD /* Model */,
+				DB6EFD491EB0F389009807BD /* View */,
+				DB4898251EB26C910060C726 /* Controller */,
+				DB4898261EB26C9F0060C726 /* Util */,
+				DB4898241EB26C7B0060C726 /* Resources */,
 				DB6EFD301EB0E62A009807BD /* AppDelegate.swift */,
-				DB6EFD4C1EB0F64D009807BD /* PokemonViewController.swift */,
 				DB6EFD341EB0E62A009807BD /* Main.storyboard */,
-				DB6EFD441EB0E8A3009807BD /* pokemon.csv */,
 				DB6EFD371EB0E62A009807BD /* Assets.xcassets */,
 				DB6EFD391EB0E62A009807BD /* LaunchScreen.storyboard */,
 				DB6EFD3C1EB0E62A009807BD /* Info.plist */,
@@ -155,6 +188,8 @@
 			files = (
 				DB6EFD3B1EB0E62A009807BD /* LaunchScreen.storyboard in Resources */,
 				DB6EFD381EB0E62A009807BD /* Assets.xcassets in Resources */,
+				DB4898221EB26C670060C726 /* Pokemon Hollow.ttf in Resources */,
+				DB4898231EB26C670060C726 /* Pokemon Solid.ttf in Resources */,
 				DB6EFD451EB0E8A3009807BD /* pokemon.csv in Resources */,
 				DB6EFD361EB0E62A009807BD /* Main.storyboard in Resources */,
 			);
@@ -168,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB6EFD4D1EB0F64D009807BD /* PokemonViewController.swift in Sources */,
+				DB4898281EB274460060C726 /* DetailPokemonViewController.swift in Sources */,
 				DB6EFD311EB0E62A009807BD /* AppDelegate.swift in Sources */,
 				DB6EFD4B1EB0F3A8009807BD /* PokemonCollectionViewCell.swift in Sources */,
 				DB6EFD481EB0EAAF009807BD /* Pokemon.swift in Sources */,
